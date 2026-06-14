@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ahmed Elmaaz | Full-Stack JavaScript Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="matrix-bg"></canvas>
+
+<header>
+<div class="container">
+<nav>
+    <div class="logo">
+        <img src="images/logo.png" alt="AE Logo" style="height:42px; vertical-align:middle;">
+    </div>
+    <ul id="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div style="display:flex; align-items:center; gap:15px;">
+        <button id="lang-toggle" class="btn-outline" style="padding:8px 14px;border-radius:20px;background:none;cursor:pointer;">AR</button>
+        <i id="theme-toggle" class="fas fa-moon" style="font-size:22px; cursor:pointer;"></i>
+        <div class="hamburger" id="hamburger">☰</div>
+    </div>
+</nav>
+</div>
+</header>
+
+<section class="hero">
+<div class="container">
+    <div class="hero-content">
+        <div class="hero-text">
+            <h1>Ahmed Elmaaz</h1>
+            <h3 id="typing"></h3>
+            <p>I build complete web applications using React.js and Node.js, with experience in database design, SQL, Firebase, and creating user-friendly digital experiences.</p>
+            <a href="#contact" class="btn">Get In Touch</a>
+            <a href="CV.pdf" download="Ahmed_Elmaaz_CV.pdf" class="btn btn-outline">Download CV</a>
+        </div>
+        <div class="hero-image">
+            <img src="images/myImag.png" alt="Ahmed Elmaaz">
+        </div>
+    </div>
+</div>
+</section>
+
+<section id="about" class="fade">
+<div class="container">
+<h2>About Me</h2>
+<p style="text-align:center;max-width:900px;margin:auto;line-height:2;font-size:18px;color:#cbd5e1;">
+Full-Stack JavaScript Developer with hands-on experience in designing and developing complete web applications using React.js and Node.js. Skilled in database design, including creating ERDs, transforming them into database schemas, and implementing them with SQL. Experienced with Firebase and Google Sheets integrations, and passionate about building modern, responsive, and user-friendly systems with a strong focus on UI/UX principles and clean user experiences.
+</p>
+</div>
+</section>
+
+<section id="education" class="fade">
+<div class="container">
+<h2>Education</h2>
+<div class="card" style="max-width:800px;margin:auto;padding:30px;">
+<h3>Higher Institute of Computer Science and Information Systems – 6th of October</h3>
+<p style="margin-top:15px;"><strong>Major:</strong> Computer Science</p>
+<p style="margin-top:10px;">Graduate of the Higher Institute of Computer Science and Information Systems in 6th of October, specialized in Computer Science with a strong interest in web development and modern technologies.</p>
+</div>
+</div>
+</section>
+
+<section id="experience" class="fade">
+<div class="container">
+<h2>Experience</h2>
+<div class="timeline" style="max-width:800px;margin:auto;">
+    <div class="card" style="margin-bottom:25px;padding:25px;">
+        <h3>Technical Support Specialist - NATGAS</h3>
+        <p><strong>Oct 2022 - Present</strong></p>
+    </div>
+    <div class="card" style="margin-bottom:25px;padding:25px;">
+        <h3>Technical Support Specialist - EXCEED WE</h3>
+        <p><strong>Oct 2021 - Oct 2022</strong></p>
+    </div>
+    <div class="card" style="padding:25px;">
+        <h3>Marketing Executive - DIRECT ARABIA</h3>
+        <p><strong>2019 - 2021</strong></p>
+    </div>
+</div>
+</div>
+</section>
+
+<section id="projects" class="fade">
+<div class="container">
+<h2>Projects</h2>
+<div class="filter-btns">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="frontend">Front-End</button>
+    <button class="filter-btn" data-filter="backend">Back-End</button>
+    <button class="filter-btn" data-filter="data">Data</button>
+</div>
+<div class="cards" id="projects-container"></div>
+</div>
+</section>
+
+<section id="skills" class="fade">
+<div class="container">
+<h2>Skills</h2>
+<div class="skills">
+    <div class="skill-box">
+        <h3>Front-End</h3>
+        <div class="skill">HTML/CSS <div class="bar"><span style="width:95%"></span></div></div>
+        <div class="skill">JavaScript <div class="bar"><span style="width:90%"></span></div></div>
+        <div class="skill">React <div class="bar"><span style="width:85%"></span></div></div>
+    </div>
+    <div class="skill-box">
+        <h3>Back-End</h3>
+        <div class="skill">Node.js <div class="bar"><span style="width:75%"></span></div></div>
+        <div class="skill">Java <div class="bar"><span style="width:80%"></span></div></div>
+    </div>
+    <div class="skill-box">
+        <h3>Databases & Data</h3>
+        <div class="skill">SQL <div class="bar"><span style="width:85%"></span></div></div>
+        <div class="skill">Firebase <div class="bar"><span style="width:80%"></span></div></div>
+        <div class="skill">Power Query <div class="bar"><span style="width:90%"></span></div></div>
+    </div>
+</div>
+</div>
+</section>
+
+<section id="contact" class="fade">
+<div class="container">
+<h2>Contact Me</h2>
+<div class="contact-form" style="text-align:center;">
+<p style="margin-bottom:30px;font-size:18px;">Feel free to contact me on WhatsApp for collaborations or opportunities.</p>
+<a href="https://wa.me/201026924833" target="_blank" class="btn"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+</div>
+</div>
+</section>
+
+<footer>
+    © 2026 Ahmed Elmaaz. All Rights Reserved.
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
