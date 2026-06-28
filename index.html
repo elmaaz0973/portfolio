@@ -16,7 +16,7 @@
 <div class="container">
 <nav>
     <div class="logo">
-        <img src="images/logo.png" alt="AE Logo" style="height:42px; vertical-align:middle;">
+        <img src="images/logo.png" alt="AE Logo" style="height:38px; vertical-align:middle;">
     </div>
     <ul id="nav-menu">
         <li><a href="#about">About</a></li>
@@ -26,10 +26,10 @@
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
-    <div style="display:flex; align-items:center; gap:15px;">
-        <button id="lang-toggle" class="btn-outline" style="padding:8px 14px;border-radius:20px;background:none;cursor:pointer;">AR</button>
-        <i id="theme-toggle" class="fas fa-moon" style="font-size:22px; cursor:pointer;"></i>
-        <div class="hamburger" id="hamburger">☰</div>
+    <div class="nav-actions">
+        <button id="lang-toggle" class="btn-outline" style="padding:7px 14px;border-radius:20px;background:none;cursor:pointer;font-family:inherit;font-size:14px;">AR</button>
+        <i id="theme-toggle" class="fas fa-moon" style="font-size:20px; cursor:pointer;"></i>
+        <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
     </div>
 </nav>
 </div>
@@ -42,8 +42,10 @@
             <h1>Ahmed Elmaaz</h1>
             <h3 id="typing"></h3>
             <p>I build complete web applications using React.js and Node.js, with experience in database design, SQL, Firebase, and creating user-friendly digital experiences.</p>
-            <a href="#contact" class="btn">Get In Touch</a>
-            <a href="CV.pdf" download="Ahmed_Elmaaz_CV.pdf" class="btn btn-outline">Download CV</a>
+            <div class="hero-btns">
+                <a href="#contact" class="btn">Get In Touch</a>
+                <a href="#" class="btn btn-outline">Download CV</a>
+            </div>
         </div>
         <div class="hero-image">
             <img src="images/myImag.png" alt="Ahmed Elmaaz">
@@ -55,7 +57,7 @@
 <section id="about" class="fade">
 <div class="container">
 <h2>About Me</h2>
-<p style="text-align:center;max-width:900px;margin:auto;line-height:2;font-size:18px;color:#cbd5e1;">
+<p style="text-align:center;max-width:900px;margin:auto;line-height:2;font-size:clamp(15px,2vw,18px);color:#cbd5e1;">
 Full-Stack JavaScript Developer with hands-on experience in designing and developing complete web applications using React.js and Node.js. Skilled in database design, including creating ERDs, transforming them into database schemas, and implementing them with SQL. Experienced with Firebase and Google Sheets integrations, and passionate about building modern, responsive, and user-friendly systems with a strong focus on UI/UX principles and clean user experiences.
 </p>
 </div>
@@ -64,8 +66,8 @@ Full-Stack JavaScript Developer with hands-on experience in designing and develo
 <section id="education" class="fade">
 <div class="container">
 <h2>Education</h2>
-<div class="card" style="max-width:800px;margin:auto;padding:30px;">
-<h3>Higher Institute of Computer Science and Information Systems – 6th of October</h3>
+<div class="card" style="max-width:800px;margin:auto;padding:28px;">
+<h3 style="font-size:clamp(15px,2.5vw,18px);">Higher Institute of Computer Science and Information Systems – 6th of October</h3>
 <p style="margin-top:15px;"><strong>Major:</strong> Computer Science</p>
 <p style="margin-top:10px;">Graduate of the Higher Institute of Computer Science and Information Systems in 6th of October, specialized in Computer Science with a strong interest in web development and modern technologies.</p>
 </div>
@@ -75,18 +77,18 @@ Full-Stack JavaScript Developer with hands-on experience in designing and develo
 <section id="experience" class="fade">
 <div class="container">
 <h2>Experience</h2>
-<div class="timeline" style="max-width:800px;margin:auto;">
-    <div class="card" style="margin-bottom:25px;padding:25px;">
+<div style="max-width:800px;margin:auto;">
+    <div class="card" style="margin-bottom:20px;padding:22px;">
         <h3>Technical Support Specialist - NATGAS</h3>
-        <p><strong>Oct 2022 - Present</strong></p>
+        <p style="margin-top:8px;"><strong>Oct 2022 - Present</strong></p>
     </div>
-    <div class="card" style="margin-bottom:25px;padding:25px;">
+    <div class="card" style="margin-bottom:20px;padding:22px;">
         <h3>Technical Support Specialist - EXCEED WE</h3>
-        <p><strong>Oct 2021 - Oct 2022</strong></p>
+        <p style="margin-top:8px;"><strong>Oct 2021 - Oct 2022</strong></p>
     </div>
-    <div class="card" style="padding:25px;">
+    <div class="card" style="padding:22px;">
         <h3>Marketing Executive - DIRECT ARABIA</h3>
-        <p><strong>2019 - 2021</strong></p>
+        <p style="margin-top:8px;"><strong>May 2018 - Oct 2020</strong></p>
     </div>
 </div>
 </div>
@@ -111,20 +113,20 @@ Full-Stack JavaScript Developer with hands-on experience in designing and develo
 <div class="skills">
     <div class="skill-box">
         <h3>Front-End</h3>
-        <div class="skill">HTML/CSS <div class="bar"><span style="width:95%"></span></div></div>
-        <div class="skill">JavaScript <div class="bar"><span style="width:90%"></span></div></div>
-        <div class="skill">React <div class="bar"><span style="width:85%"></span></div></div>
+        <div class="skill" style="margin-top:16px;">HTML/CSS <div class="bar"><span style="width:95%"></span></div></div>
+        <div class="skill" style="margin-top:14px;">JavaScript <div class="bar"><span style="width:90%"></span></div></div>
+        <div class="skill" style="margin-top:14px;">React <div class="bar"><span style="width:85%"></span></div></div>
     </div>
     <div class="skill-box">
         <h3>Back-End</h3>
-        <div class="skill">Node.js <div class="bar"><span style="width:75%"></span></div></div>
-        <div class="skill">Java <div class="bar"><span style="width:80%"></span></div></div>
+        <div class="skill" style="margin-top:16px;">Node.js <div class="bar"><span style="width:75%"></span></div></div>
+        <div class="skill" style="margin-top:14px;">Java <div class="bar"><span style="width:80%"></span></div></div>
     </div>
     <div class="skill-box">
         <h3>Databases & Data</h3>
-        <div class="skill">SQL <div class="bar"><span style="width:85%"></span></div></div>
-        <div class="skill">Firebase <div class="bar"><span style="width:80%"></span></div></div>
-        <div class="skill">Power Query <div class="bar"><span style="width:90%"></span></div></div>
+        <div class="skill" style="margin-top:16px;">SQL <div class="bar"><span style="width:85%"></span></div></div>
+        <div class="skill" style="margin-top:14px;">Firebase <div class="bar"><span style="width:80%"></span></div></div>
+        <div class="skill" style="margin-top:14px;">Power Query <div class="bar"><span style="width:90%"></span></div></div>
     </div>
 </div>
 </div>
@@ -133,14 +135,14 @@ Full-Stack JavaScript Developer with hands-on experience in designing and develo
 <section id="contact" class="fade">
 <div class="container">
 <h2>Contact Me</h2>
-<div class="contact-form" style="text-align:center;">
-<p style="margin-bottom:30px;font-size:18px;">Feel free to contact me on WhatsApp for collaborations or opportunities.</p>
+<div class="contact-form">
+<p style="margin-bottom:30px;font-size:clamp(15px,2vw,18px);">Feel free to contact me on WhatsApp for collaborations or opportunities.</p>
 <a href="https://wa.me/201026924833" target="_blank" class="btn"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
 </div>
 </div>
 </section>
 
-<footer>
+<footer style="text-align:center;padding:35px;border-top:1px solid #334155;font-size:14px;">
     © 2026 Ahmed Elmaaz. All Rights Reserved.
 </footer>
 
