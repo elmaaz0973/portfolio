@@ -66,11 +66,11 @@ type();
 
 // Projects
 const projects = [
-    {title:"Dental Clinic System", category:"frontend", img:"images/dental.png", link:"https://elmaaz0973.github.io/dental-clinic-system/"},
-    {title:"MoaazStore E-commerce", category:"frontend", img:"images/store.png", link:"https://elmaaz0973.github.io/MoaazStore/"},
-    {title:"Apple Website Clone", category:"frontend", img:"images/apple.png", link:"https://elmaaz0973.github.io/apple/"},
-    {title:"Natgas Complaints System", category:"frontend", img:"images/natgas.png", link:"#"},
-    {title:"Salary Sheet - GAS Serve", category:"data", img:"images/gasServe.png", link:"#"}
+    {title:"Dental Clinic System", category:"frontend", img:"images/dental.png", link:"https://elmaaz0973.github.io/clinicSystem/"},
+    {title:"MoaazStore E-commerce", category:"frontend", img:"images/store.png", link:"https://elmaaz0973.github.io/Moaaz_Store/"},
+    {title:"Apple Website Clone", category:"frontend", img:"images/apple.png", link:"https://elmaaz0973.github.io/appleProject/"},
+    {title:"Natgas Complaints System", category:"frontend", img:"images/natgas.png", link:"https://elmaaz0973.github.io/NatgasProject/"},
+    {title:"Salary Sheet - GAS Serve", category:"data", img:"images/gasServe.png", link:"https://elmaaz0973.github.io/gasServe/"}
 ];
 
 function renderProjects(filter = 'all') {
