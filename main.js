@@ -1,6 +1,7 @@
-// Matrix background
+// Matrix Background
 const canvas = document.getElementById('matrix-bg');
 const ctx = canvas.getContext('2d');
+
 let width, height;
 function resizeCanvas() {
     width = canvas.width = window.innerWidth;
@@ -8,15 +9,12 @@ function resizeCanvas() {
 }
 resizeCanvas();
 window.addEventListener('resize', resizeCanvas);
+
 const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*()_+-=[]{}|;:,.<>/?アィゥェォ';
 const fontSize = 16;
-let drops = [];
-function initDrops() {
-    const columns = Math.floor(width / fontSize);
-    drops = Array(columns).fill(1);
-}
-initDrops();
-window.addEventListener('resize', initDrops);
+const columns = width / fontSize;
+const drops = Array(Math.floor(columns)).fill(1);
+
 function drawMatrix() {
     ctx.fillStyle = 'rgba(15, 23, 42, 0.12)';
     ctx.fillRect(0, 0, width, height);
@@ -49,7 +47,11 @@ themeToggle.addEventListener('click', () => {
 });
 
 // Typing Effect
-const texts = ["Full-Stack JavaScript", "React & Node.js", "UI/UX Enthusiast"];
+const texts = [
+    "Full-Stack JavaScript ",
+    "React & Node.js",
+    "UI/UX Enthusiast"
+];
 let count = 0, index = 0;
 function type() {
     const current = texts[count];
@@ -64,28 +66,29 @@ function type() {
 }
 type();
 
-// Projects
+// Projects Data
 const projects = [
-    {title:"Dental Clinic System", category:"frontend", img:"images/dental.png", link:"https://elmaaz0973.github.io/clinicSystem/"},
-    {title:"MoaazStore E-commerce", category:"frontend", img:"images/store.png", link:"https://elmaaz0973.github.io/Moaaz_Store/"},
-    {title:"Apple Website Clone", category:"frontend", img:"images/apple.png", link:"https://elmaaz0973.github.io/appleProject/"},
-    {title:"Natgas Complaints System", category:"frontend", img:"images/natgas.png", link:"https://elmaaz0973.github.io/NatgasProject/"},
-    {title:"Salary Sheet - GAS Serve", category:"data", img:"images/gasServe.png", link:"https://elmaaz0973.github.io/gasServe/"}
+    {title:"Dental Clinic System", category:["frontend","backend"], img:"images/dental.png", link:"https://elmaaz0973.github.io/clinicSystem/"},
+    {title:"MoaazStore E-commerce", category:["frontend","backend"], img:"images/store.png", link:"https://elmaaz0973.github.io/Moaaz_Store/"},
+    {title:"Apple Website Clone", category:["frontend"], img:"images/apple.png", link:"https://elmaaz0973.github.io/appleProject/"},
+    {title:"Natgas Complaints System", category:["frontend","backend"], img:"images/natgas.png", link:"https://elmaaz0973.github.io/NatgasProject/"},
+    {title:"MoaazVerse", category:["frontend","backend"], img:"images/moaazverse.png", link:"https://elmaaz0973.github.io/MoaazVerse/"},
+    {title:"Salary Sheet - GAS Serve", category:["data"], img:"images/gasServe.png", link:"https://elmaaz0973.github.io/gasServe/"}
 ];
 
 function renderProjects(filter = 'all') {
     const container = document.getElementById('projects-container');
     container.innerHTML = '';
-    const filtered = filter === 'all' ? projects : projects.filter(p => p.category === filter);
+    const filtered = filter === 'all' ? projects : projects.filter(p => p.category.includes(filter));
     filtered.forEach(p => {
         const card = document.createElement('div');
         card.className = 'card';
         card.innerHTML = `
-            <img src="${p.img}" alt="${p.title}" loading="lazy">
-            <div style="padding:22px;">
-                <h3 style="font-size:clamp(15px,2.5vw,18px);">${p.title}</h3>
-                <p style="margin-top:8px;font-size:14px;color:#94a3b8;">Professional ${p.category} project</p>
-                <a href="${p.link}" class="btn" style="margin-top:15px;">Live Demo</a>
+            <img src="${p.img}" alt="${p.title}">
+            <div class="card-content" style="padding:25px;">
+                <h3>${p.title}</h3>
+                <p>Professional ${p.category.join(' & ')} project</p>
+                <a href="${p.link}" target="_blank" class="btn" style="margin-top:15px;display:inline-block;">Live Demo</a>
             </div>
         `;
         container.appendChild(card);
@@ -93,6 +96,7 @@ function renderProjects(filter = 'all') {
 }
 renderProjects();
 
+// Filter Buttons
 document.querySelectorAll('.filter-btn').forEach(btn => {
     btn.addEventListener('click', () => {
         document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
@@ -101,15 +105,12 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
     });
 });
 
-// Hamburger menu — close on link click
-const hamburger = document.getElementById('hamburger');
-const navMenu = document.getElementById('nav-menu');
-hamburger.addEventListener('click', () => navMenu.classList.toggle('active'));
-document.querySelectorAll('#nav-menu a').forEach(link => {
-    link.addEventListener('click', () => navMenu.classList.remove('active'));
+// Mobile Menu
+document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('nav-menu').classList.toggle('active');
 });
 
-// Language toggle
+// Language Toggle
 const translations = {
     en:{about:'About',education:'Education',experience:'Experience',projects:'Projects',skills:'Skills',contact:'Contact'},
     ar:{about:'من أنا',education:'التعليم',experience:'الخبرات',projects:'المشاريع',skills:'المهارات',contact:'التواصل'}
@@ -120,10 +121,13 @@ document.getElementById('lang-toggle').addEventListener('click', () => {
     document.getElementById('lang-toggle').textContent = isAr ? 'AR' : 'EN';
 });
 
-// Fade on scroll
+// Scroll Fade-In
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('show');
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
     });
-}, { threshold: 0.12 });
+}, { threshold: 0.15 });
+
 document.querySelectorAll('.fade').forEach(el => observer.observe(el));
