@@ -10,7 +10,7 @@ function resizeCanvas() {
 resizeCanvas();
 window.addEventListener('resize', resizeCanvas);
 
-const chars = 'AHMEDIBRAHIMMOHAMEDELMOAAZAHMEDIBRAHIMMOHAMEDELMOAAZ010926924833@#$%^&*(MOAAZ)_+-=[MOAAZ]{MOAAZ}|;:,.<>/?アィゥェォ';
+const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*()_+-=[]{}|;:,.<>/?アィゥェォ';
 const fontSize = 16;
 const columns = width / fontSize;
 const drops = Array(Math.floor(columns)).fill(1);
@@ -68,12 +68,13 @@ type();
 
 // Projects Data
 const projects = [
-    {title:"Dental Clinic System", category:["frontend","backend"], img:"images/dental.png", link:"https://clinic-system-pied.vercel.app/"},
-    {title:"MoaazStore E-commerce", category:["frontend","backend"], img:"images/store.png", link:"https://moaaz-store-1866.vercel.app/"},
-    {title:"Apple Website Clone", category:["frontend"], img:"images/apple.png", link:"https://apple-project-weld.vercel.app/"},
-    {title:"Natgas Complaints System", category:["frontend","backend"], img:"images/natgas.png", link:"https://natgas-project-pkt4.vercel.app/"},
-    {title:"MoaazVerse", category:["frontend","backend"], img:"images/moaazverse.png", link:"https://moaaz-verse-kl4j.vercel.app/"},
-    {title:"Salary Sheet - GAS Serve", category:["frontend","backend"], img:"images/gasServe.png", link:"https://gas-serve-kodh.vercel.app/"}
+    {title:"Dental Clinic System", category:["frontend","backend"], img:"images/dental.png", link:"https://elmaaz0973.github.io/clinicSystem/"},
+    {title:"MoaazStore E-commerce", category:["frontend","backend"], img:"images/store.png", link:"https://elmaaz0973.github.io/Moaaz_Store/"},
+    {title:"Apple Website Clone", category:["frontend"], img:"images/apple.png", link:"https://elmaaz0973.github.io/appleProject/"},
+    {title:"Natgas Complaints System", category:["frontend","backend"], img:"images/natgas.png", link:"https://elmaaz0973.github.io/NatgasProject/"},
+    {title:"MoaazVerse", category:["frontend","backend"], img:"images/moaazverse.png", link:"https://elmaaz0973.github.io/MoaazVerse/"},
+    {title:"Salary Sheet - GAS Serve", category:["data"], img:"images/gasServe.png", link:"https://elmaaz0973.github.io/gasServe/"},
+    {title:"MoaazChat", category:["frontend","backend"], img:"images/moaazchat.png", link:"https://moaaz-chat.vercel.app/"}
 ];
 
 function renderProjects(filter = 'all') {
