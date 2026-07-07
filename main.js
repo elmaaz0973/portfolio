@@ -68,13 +68,14 @@ type();
 
 // Projects Data
 const projects = [
-    {title:"Dental Clinic System", category:["frontend","backend"], img:"images/dental.png", link:"https://elmaaz0973.github.io/clinicSystem/"},
-    {title:"MoaazStore E-commerce", category:["frontend","backend"], img:"images/store.png", link:"https://elmaaz0973.github.io/Moaaz_Store/"},
+    {title:"Dental Clinic System", category:["fullstack"], img:"images/dental.png", link:"https://elmaaz0973.github.io/clinicSystem/"},
+    {title:"MoaazStore E-commerce", category:["fullstack"], img:"images/store.png", link:"https://elmaaz0973.github.io/Moaaz_Store/"},
     {title:"Apple Website Clone", category:["frontend"], img:"images/apple.png", link:"https://elmaaz0973.github.io/appleProject/"},
-    {title:"Natgas Complaints System", category:["frontend","backend"], img:"images/natgas.png", link:"https://elmaaz0973.github.io/NatgasProject/"},
-    {title:"MoaazVerse", category:["frontend","backend"], img:"images/moaazverse.png", link:"https://elmaaz0973.github.io/MoaazVerse/"},
-    {title:"Salary Sheet - GAS Serve", category:["data"], img:"images/gasServe.png", link:"https://elmaaz0973.github.io/gasServe/"},
-    {title:"MoaazChat", category:["frontend","backend"], img:"images/moaazchat.png", link:"https://moaaz-chat.vercel.app/"}
+    {title:"Natgas Complaints System", category:["fullstack"], img:"images/natgas.png", link:"https://elmaaz0973.github.io/NatgasProject/"},
+    {title:"MoaazVerse", category:["fullstack"], img:"images/moaazverse.png", link:"https://elmaaz0973.github.io/MoaazVerse/"},
+    {title:"Salary Sheet - GAS Serve", category:["backend"], img:"images/gasServe.png", link:"https://elmaaz0973.github.io/gasServe/"},
+    {title:"MoaazChat", category:["fullstack"], img:"images/moaazchat.png", link:"https://moaaz-chat.vercel.app/"},
+    {title:"Khedmaty - Services Platform", category:["fullstack"], img:"images/khedmaty.png", link:"https://khadamaty-kappa.vercel.app/"}
 ];
 
 function renderProjects(filter = 'all') {
