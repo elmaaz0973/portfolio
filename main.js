@@ -68,12 +68,12 @@ type();
 
 // Projects Data
 const projects = [
-    {title:"Dental Clinic System", category:["fullstack"], img:"images/dental.png", link:"https://elmaaz0973.github.io/clinicSystem/"},
-    {title:"MoaazStore E-commerce", category:["fullstack"], img:"images/store.png", link:"https://elmaaz0973.github.io/Moaaz_Store/"},
-    {title:"Apple Website Clone", category:["frontend"], img:"images/apple.png", link:"https://elmaaz0973.github.io/appleProject/"},
-    {title:"Natgas Complaints System", category:["fullstack"], img:"images/natgas.png", link:"https://elmaaz0973.github.io/NatgasProject/"},
-    {title:"MoaazVerse", category:["fullstack"], img:"images/moaazverse.png", link:"https://elmaaz0973.github.io/MoaazVerse/"},
-    {title:"Salary Sheet - GAS Serve", category:["backend"], img:"images/gasServe.png", link:"https://elmaaz0973.github.io/gasServe/"},
+    {title:"Dental Clinic System", category:["fullstack"], img:"images/dental.png", link:"https://clinic-system-pied.vercel.app/"},
+    {title:"MoaazStore E-commerce", category:["fullstack"], img:"images/store.png", link:"https://moaaz-store-1866.vercel.app/"},
+    {title:"Apple Website Clone", category:["frontend"], img:"images/apple.png", link:"https://apple-project-weld.vercel.app/"},
+    {title:"Natgas Complaints System", category:["fullstack"], img:"images/natgas.png", link:"https://natgas-project.vercel.app/"},
+    {title:"MoaazVerse", category:["fullstack"], img:"images/moaazverse.png", link:"https://moaaz-verse-kl4j.vercel.app/"},
+    {title:"Salary Sheet - GAS Serve", category:["backend"], img:"images/gasServe.png", link:"https://gas-serve-kodh.vercel.app/"},
     {title:"MoaazChat", category:["fullstack"], img:"images/moaazchat.png", link:"https://moaaz-chat.vercel.app/"},
     {title:"Khedmaty - Services Platform", category:["fullstack"], img:"images/khedmaty.png", link:"https://khadamaty-kappa.vercel.app/"}
 ];
